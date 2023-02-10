@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Button = styled.input`
-
   display: block;
   margin-bottom: 1.5em;
   font-size: 1em;
@@ -19,6 +18,41 @@ export const Button = styled.input`
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+
+  @keyframes light{
+        0%{opacity:1;color: #fdea7b;}
+        1%{opacity:0.95;color: #f5edbf}
+        10%{opacity:0.95;color:#f5edbf;}
+        11%{opacity:1;color: #fdea7b;}
+        12%{opacity:0.95;color:#f5edbf;}
+        20%{opacity:0.95;color:#f5edbf;}
+        21%{opacity:1;color: #fdea7b;}
+        26%{opacity:0.95;color:#f5edbf;}
+        30%{opacity:0.95;color:#f5edbf;}
+        31%{opacity:1;color: #fdea7b;}
+        35%{opacity:1;color: #fdea7b;}
+        36%{opacity:0.95;color:#f5edbf;}
+        45%{opacity:0.95;color:#f5edbf;}
+        46%{opacity:1;color: #fdea7b;}
+        50%{opacity:1;color: #fdea7b;}
+        55%{opacity:1;color: #fdea7b;}
+        56%{opacity:0.95;color:#f5edbf;}
+        57%{opacity:0.95;color:#f5edbf;}
+        58%{opacity:1;color: #fdea7b;}
+        60%{opacity:1;color: #fdea7b;}
+        61%{opacity:0.95;color:#f5edbf;}
+        65%{opacity:0.95;color:#f5edbf;}
+        66%{opacity:1;color: #fdea7b;}
+        75%{opacity:1;color: #fdea7b;}
+        76%{opacity:0.95;color:#f5edbf;}
+        77%{opacity:0.95;color:#f5edbf;}
+        78%{opacity:1;color: #fdea7b;}
+        85%{opacity:1;color: #fdea7b;}
+        86%{opacity:0.95;color:#f5edbf;}
+        87%{opacity:0.95;color:#f5edbf;}
+        88%{opacity:1;color: #fdea7b;}
+        99%{opacity:1;color: #fdea7b;}
+    }
 
 &:before, &:after {
   content: "";
@@ -65,8 +99,9 @@ export const Button = styled.input`
   transform: translateX(-2.5%) rotateY(180deg);
 }
 /* Other States */
-&:focus {
-	/* Usually an anti-A11Y practice but set to remove an annoyance just for this demo */
-  outline: 0;
+&:hover {
+    /* Usually an anti-A11Y practice but set to remove an annoyance just for this demo */
+    outline: 0;
+    animation: light 5s ease-out 0.3s both;
 }
 `;
