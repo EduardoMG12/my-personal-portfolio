@@ -1,30 +1,25 @@
-import light from '@styles/theme/light';
-import dark from '@styles/theme/dark';
-import IThemes from '@styles/theme/IThemes';
-import React, {useState, createContext, useContext} from 'react';
-  
-  interface ThemeProvider {
-    children: React.ReactNode
-  }
+import React, { createContext } from 'react';
+import { ThemeProvider, DefaultTheme } from 'styled-components';
+import light from '@styles/themes/light';
+import dark from '@styles/themes/dark';
+import usePersistedState from '@utils/usePersistedState';
 
-  interface ThemeContext {
-    theme: IThemes;
-    setTheme: (newTheme: IThemes) => IThemes
-  }
-  
-const ThemeContext = createContext<ThemeContext>({
-	theme: light,
-	setTheme: (theme) => theme.title === 'light' ? dark : light,
-});
-  
-export const ThemeProvider: React.FC<ThemeProvider> = ({ children }) => {
-	const [theme, setTheme] = useState<IThemes>(light);
-  
-	return (
-		<ThemeContext.Provider value={{ theme, setTheme }}>
+interface IProps {
+    children : React.ReactNode
+}
+
+const ThemeContextProvider: React.FC<IProps> = ({children}) => {
+	const [theme, setTheme] = usePersistedState<DefaultTheme>('theme' ,light);
+
+	const toggleTheme = () => {
+		setTheme(theme.title === 'light' ? dark : light);
+	};
+
+	return(    
+		<ThemeProvider theme={theme}>
 			{children}
-		</ThemeContext.Provider>
+		</ThemeProvider>
 	);
 };
-  
-export const useThemeContext = () => useContext(ThemeContext);
+
+export default ThemeContextProvider;
