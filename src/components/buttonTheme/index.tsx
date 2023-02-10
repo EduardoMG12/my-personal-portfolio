@@ -1,4 +1,4 @@
-import ThemeContextProvider, { ToggleThemeContext } from '@hooks/ThemeProvider';
+import { ToggleThemeContext } from '@hooks/ThemeProvider';
 import React, { useContext } from 'react';
 import { Button } from './styles';
 
