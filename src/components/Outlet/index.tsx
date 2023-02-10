@@ -4,15 +4,11 @@ import { Outlet } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 
-export interface Props {
-    toggleTheme: () => void
 
-}
-
-const Main: React.FC<Props> = ({toggleTheme}) => {
+const Main: React.FC = () => {
 	return (
 		<>
-			<Header toggleTheme={toggleTheme}/>
+			<Header />
 			<Outlet />
 			<Footer />
 		</>

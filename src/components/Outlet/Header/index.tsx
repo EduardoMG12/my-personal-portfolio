@@ -1,13 +1,12 @@
 import ButtonTheme from '@components/buttonTheme';
 import React from 'react';
-import { Props } from '..';
 
 import { Container } from './styles';
 
-const Header: React.FC<Props> = ({toggleTheme}) => {
+const Header: React.FC = () => {
 	return(
 		<Container>
-			<ButtonTheme onChange={toggleTheme}/>
+			<ButtonTheme />
 		</Container>
 	);
 };
