@@ -1,10 +1,10 @@
 export default {
-	title:'dark',
+	title:'light',
 
 	colors:{
 		primary:'#f5f5f5',
 		secundary:'',
-		header:'#000000',
+		header:'#f5f5f5',
 		footer:'#000000'
 	}
 };

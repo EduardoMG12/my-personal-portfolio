@@ -15,6 +15,10 @@ const GlobalStyle = createGlobalStyle`
   html{
     font-size: 62.5%
   }
+
+  body{
+    background-color: ${props => props.theme.colors.primary};
+  }
   
 `;
 
