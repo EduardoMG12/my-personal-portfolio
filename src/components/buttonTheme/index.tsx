@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Button } from './styles';
 
 interface IPropsButtonTheme{
     onChange: () => void
-
 }
 
 const ButtonTheme: React.FC<IPropsButtonTheme> = ({onChange}) => {
