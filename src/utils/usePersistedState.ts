@@ -5,7 +5,7 @@ type IResponse<T> = [
     Dispatch<SetStateAction<T>>
 ]
 
-function usePersistedState<T>(key: string, initialState: any): IResponse<T> {
+function usePersistedState<T>(key: string, initialState: T): IResponse<T> {
 	const [state, setState] = useState(() => {
 		const storageValue = localStorage.getItem(key); 
 
@@ -13,7 +13,7 @@ function usePersistedState<T>(key: string, initialState: any): IResponse<T> {
             
 			return JSON.parse(storageValue);
 		}
-        
+
 		return initialState;
 	});
 
