@@ -8,16 +8,24 @@ interface IProps {
     children : React.ReactNode
 }
 
+interface IToggleThemeContext {
+    toggleTheme?: () => void
+}
+
+export const ToggleThemeContext = createContext<IToggleThemeContext>({});
+
 const ThemeContextProvider: React.FC<IProps> = ({children}) => {
 	const [theme, setTheme] = usePersistedState<DefaultTheme>('theme' ,light);
-
+    
 	const toggleTheme = () => {
 		setTheme(theme.title === 'light' ? dark : light);
 	};
 
 	return(    
 		<ThemeProvider theme={theme}>
-			{children}
+			<ToggleThemeContext.Provider value={{toggleTheme}}>
+				{children}
+			</ToggleThemeContext.Provider>
 		</ThemeProvider>
 	);
 };
