@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body{
-    background-color: ${props => props.theme.colors.primary};
+    background-color: ${props => props.theme.colors.header};
   }
   
 `;
