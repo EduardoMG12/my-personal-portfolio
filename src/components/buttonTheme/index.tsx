@@ -9,7 +9,6 @@ const ButtonTheme: React.FC = () => {
 	const isDark = theme.title === 'dark' ? true : false; 
 	return (
 		<Button type="checkbox" checked={isDark} onChange={toggleTheme}/>
-
 	);
 };
 
