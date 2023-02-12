@@ -7,14 +7,8 @@ type IResponse<T> = [
 
 function usePersistedState<T>(key: string, initialState: T): IResponse<T> {
 	const [state, setState] = useState(() => {
-		const storageValue = localStorage.getItem(key); 
-
-		if (storageValue){
-            
-			return JSON.parse(storageValue);
-		}
-
-		return initialState;
+		const storageValue = localStorage.getItem(key);    
+		return JSON.parse(storageValue as string) ?? initialState;
 	});
 
 	useEffect(()=> {
