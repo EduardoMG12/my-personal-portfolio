@@ -22,6 +22,8 @@
         "@styles/*":["src/styles/*"],
         "@hooks/*":["src/hooks/*"],
         "@utils/*":["src/utils/*"],
+        "@api/*":["src/services/api/*"],
+        "@assets/*":["src/assets/*"],
     }
   },
   "include": ["src"],
