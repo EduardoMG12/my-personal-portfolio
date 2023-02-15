@@ -10,8 +10,8 @@ export const Button = styled.input`
   color: #fdea7b;
   display: inline-flex;
   align-items: center;
-  margin: auto;
   padding: 0.15em;
+  margin: auto 0;
   width: 3em;
   height: 1.5em;
   transition: background-color 0.1s 0.3s ease-out, box-shadow 0.1s 0.3s ease-out;

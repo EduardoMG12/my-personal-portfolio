@@ -6,9 +6,9 @@ import { Button } from './styles';
 const ButtonTheme: React.FC = () => {
 	const { toggleTheme } = useContext(ToggleThemeContext);
 	const theme = useTheme();
-	const isDark = theme.title === 'dark' ? true : false; 
+	const isLight = theme.title === 'light' ? true : false; 
 	return (
-		<Button type="checkbox" checked={isDark} onChange={toggleTheme}/>
+		<Button type="checkbox" checked={isLight} onChange={toggleTheme}/>
 	);
 };
 
