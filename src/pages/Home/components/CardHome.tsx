@@ -15,14 +15,14 @@ const CardHome: React.FC = () => {
 	const theme = useTheme();
     
 	const loadingMyImage = () => {
-		const imagesWhite = [imageDark, imageDark2];
-		const imagesDark = [imageWhite, imageWhite2];
+		const imagesDark = [imageDark, imageDark2];
+		const imagesLight = [imageWhite, imageWhite2];
 		const random = Math.round(Math.random());
 		
-		return theme.title === 'dark' ? imagesDark[random] : imagesWhite[random];
+		return theme.title === 'dark' ? imagesDark[random] : imagesLight[random];
 	};
 
-	const loadingBgd = () => theme.title === 'dark' ? bgdWhite : bgdDark;
+	const loadingBgd = () => theme.title === 'dark' ? bgdDark: bgdWhite;
 
 	return(
 		<Card wd='100rem' hg='56rem' borderR='2rem' bgdImage={loadingBgd()}>
