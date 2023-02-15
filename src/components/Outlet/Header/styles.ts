@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
     width: 100%;
     max-width: 100vw;
+    border-bottom: 0.1rem ${props => props.theme.colors.borderHeader} solid;
     height: 7vh;
     margin: 0 auto;
     display: flex;

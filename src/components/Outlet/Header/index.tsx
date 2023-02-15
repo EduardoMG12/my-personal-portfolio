@@ -1,5 +1,6 @@
 import ButtonTheme from '@components/buttonTheme';
 import Hamburguer from '@components/Hamburguer';
+import ModalCV from '@components/ModalCV';
 import React from 'react';
 
 import { Container } from './styles';
@@ -14,7 +15,7 @@ const Header: React.FC = () => {
 					<ul>
 						<li>sobre mim</li>
 						<li>projetos</li>
-						<li><i className='fa-sharp fa-solid fa-user-tie'></i></li>
+						<ModalCV/>
 					</ul>  
 				</nav>
 			</Container>

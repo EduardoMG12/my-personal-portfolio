@@ -1,3 +1,4 @@
+import ModalCV from '@components/ModalCV';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { SideBarMenu, LinkContent } from './styles';
@@ -16,7 +17,7 @@ const SideBar:React.FC<IPropsSideBar> = ({ open }) => {
 				<LinkContent>projetos</LinkContent>
 			</Link>
 			<Link to="/">
-				<LinkContent><i className='fa-sharp fa-solid fa-user-tie'></i></LinkContent>
+				<LinkContent><ModalCV/></LinkContent>
 			</Link>
 		</SideBarMenu>
 	);

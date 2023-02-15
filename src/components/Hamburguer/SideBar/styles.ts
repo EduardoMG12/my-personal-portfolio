@@ -5,6 +5,7 @@ export const SideBarMenu = styled.ul<IPropsSideBar>`
   list-style: none;
   display: flex;
   z-index: 1;
+  overflow-y: hidden;
   @media (max-width: 425px) {
     background-color: ${props => props.theme.colors.header};    
     flex-flow: column nowrap;
@@ -21,7 +22,7 @@ export const SideBarMenu = styled.ul<IPropsSideBar>`
   }
   & a:last-child{
     position: absolute;
-    bottom: 1rem;
+    bottom: 6rem;
     left: 0;
     right: 0;
   }
