@@ -8,6 +8,7 @@ interface IThemes {
         ballonCard: string,
         iconsBgdCard:string,
 		iconsCard:string,
+        borderHeader:string,
         header: string,
         headerText: string,
         headerTextHover: string,
