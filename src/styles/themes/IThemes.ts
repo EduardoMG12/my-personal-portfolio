@@ -9,6 +9,8 @@ interface IThemes {
         iconsBgdCard:string,
 		iconsCard:string,
         header: string,
+        headerText: string,
+        headerTextHover: string,
         footer: string
     }
 }

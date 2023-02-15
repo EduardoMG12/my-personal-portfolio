@@ -12,6 +12,8 @@ import 'styled-components';
                 iconsBgdCard:string,
                 iconsCard:string,
                 header: string,
+                headerText: string,
+                headerTextHover: string,
                 footer: string
             }
         } 
