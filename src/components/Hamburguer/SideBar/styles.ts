@@ -7,6 +7,7 @@ export const SideBarMenu = styled.ul<IPropsSideBar>`
   z-index: 1;
   overflow-y: hidden;
   @media (max-width: 425px) {
+    border-radius: 2rem;
     background-color: ${props => props.theme.colors.header};    
     flex-flow: column nowrap;
     position: fixed;
@@ -29,9 +30,11 @@ export const SideBarMenu = styled.ul<IPropsSideBar>`
 `;
 
 export const LinkContent = styled.p`
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    font-family: 'Inter', sans-serif;
     color: ${props => props.theme.colors.headerText};
     display: block;
-    font-weight: 900;
+    font-weight: 600;
     text-align: center;
     height: 100%;
     font-size: 2rem;

@@ -2,24 +2,25 @@ import styled from 'styled-components';
 import { IPropsHamburguer } from '.';
 
 export const Container = styled.div<IPropsHamburguer>`
-  width: 2rem;
-  height: 2rem;
-  position: fixed;
-  top: 2rem;
-  right: 1rem;
-  z-index: 2;
-  display: none;
-  visibility: hidden;
-  cursor: none;
-  @media (max-width: 425px) {
-    cursor: pointer;
-    visibility: visible;
-    display: flex;
-    justify-content: space-around;
-    flex-flow: column nowrap;
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    top: 2rem;
+    right: 1rem;
+    z-index: 2;
+    display: none;
+    visibility: hidden;
+    cursor: none;
+    @media (max-width: 425px) {
+        cursor: pointer;
+        visibility: visible;
+        display: flex;
+        justify-content: space-around;
+        flex-flow: column nowrap;
   }
 
   span {
+    border-radius: 2rem;
     width: 2rem;
     height: 0.25rem;
     background-color: ${props => props.open ? '#ccc' : '#333'};
