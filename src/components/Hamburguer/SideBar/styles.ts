@@ -20,19 +20,25 @@ export const SideBarMenu = styled.ul<IPropsSideBar>`
     width: 50vw;
     padding-top: 6rem;
     transition: transform 0.3s ease-in-out;
-  }
-  & a:last-child{
-    position: absolute;
-    bottom: 6rem;
-    left: 0;
-    right: 0;
-  }
+}
+    & a, li{
+        color: ${props => props.theme.colors.headerText};
+
+    }
+    & li:last-child{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 6rem;
+        left: 0;
+        right: 0;
+    }
 `;
 
 export const LinkContent = styled.p`
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
     font-family: 'Inter', sans-serif;
-    color: ${props => props.theme.colors.headerText};
     display: block;
     font-weight: 600;
     text-align: center;

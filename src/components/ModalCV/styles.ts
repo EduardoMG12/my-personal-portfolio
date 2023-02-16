@@ -15,7 +15,7 @@ export const ContainerModal = styled.div<IPropsModal>`
     top: 4rem;
     align-items: center;
     list-style: none;
-    background-color: ${props => props.theme.colors.header}; 
+    background-color: ${props => props.theme.colors.header};
     position: fixed;
     transform: ${props => props.isVisible ? 'translateX(0)' : 'translateX(100%)'};
     border-radius: 2rem;
@@ -36,10 +36,12 @@ export const ContainerModal = styled.div<IPropsModal>`
     }
     @media (max-width:425px) {
         justify-content: center;
-        height: 12vh;
+        align-items: center;
+        margin-top: 1rem;
+        height: fit-content;
         width: 50vw;
         right: 0;
         top: auto;
         bottom: auto;
-    }       
+    }
     `;
