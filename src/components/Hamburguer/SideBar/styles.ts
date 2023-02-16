@@ -26,13 +26,29 @@ export const SideBarMenu = styled.ul<IPropsSideBar>`
 
     }
     & li:last-child{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        bottom: 6rem;
-        left: 0;
-        right: 0;
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        text-align: center;
+        font-size: 2rem;
+        display: none;
+        text-decoration: none;
+        list-style: none;
+        white-space: nowrap;
+        @media (max-width: 425px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 6rem;
+            left: 0;
+            right: 0;
+        }
+        &:hover {
+            color: ${props => props.theme.colors.headerTextHover};
+            cursor: pointer;
+            transition: 0.1s ease-in-out;
+        }
     }
 `;
 
