@@ -16,9 +16,9 @@ const SideBar:React.FC<IPropsSideBar> = ({ open }) => {
 			<Link to="/">
 				<LinkContent>projetos</LinkContent>
 			</Link>
-			<Link to="/">
-				<LinkContent><ModalCV/></LinkContent>
-			</Link>
+			<li>
+				<ModalCV/>
+			</li>
 		</SideBarMenu>
 	);
 };

@@ -7,6 +7,7 @@ export const SideBarMenu = styled.ul<IPropsSideBar>`
   z-index: 1;
   overflow-y: hidden;
   @media (max-width: 425px) {
+    border-radius: 2rem;
     background-color: ${props => props.theme.colors.header};    
     flex-flow: column nowrap;
     position: fixed;
@@ -19,19 +20,43 @@ export const SideBarMenu = styled.ul<IPropsSideBar>`
     width: 50vw;
     padding-top: 6rem;
     transition: transform 0.3s ease-in-out;
-  }
-  & a:last-child{
-    position: absolute;
-    bottom: 6rem;
-    left: 0;
-    right: 0;
-  }
+}
+    & a, li{
+        color: ${props => props.theme.colors.headerText};
+
+    }
+    & li:last-child{
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        text-align: center;
+        font-size: 2rem;
+        display: none;
+        text-decoration: none;
+        list-style: none;
+        white-space: nowrap;
+        @media (max-width: 425px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 6rem;
+            left: 0;
+            right: 0;
+        }
+        &:hover {
+            color: ${props => props.theme.colors.headerTextHover};
+            cursor: pointer;
+            transition: 0.1s ease-in-out;
+        }
+    }
 `;
 
 export const LinkContent = styled.p`
-    color: ${props => props.theme.colors.headerText};
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    font-family: 'Inter', sans-serif;
     display: block;
-    font-weight: 900;
+    font-weight: 600;
     text-align: center;
     height: 100%;
     font-size: 2rem;

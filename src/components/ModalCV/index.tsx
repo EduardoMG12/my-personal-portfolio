@@ -11,8 +11,7 @@ const ModalCV: React.FC = () => {
 		<Container>
 			<i className='fa-sharp fa-solid fa-user-tie' onClick={switchVisible}/>
 			<Modal isVisible={isVisible}>
-				<a href=""><p>Dowload CV</p></a>
-				<a href=""><p>Ver CV</p></a>
+				<a href="https://drive.google.com/file/d/13SwZxLPPrhrERL_F8R-UOij_M5h6Th9W/view?usp=share_link" target="_blank" rel="noreferrer">Ver CV</a>
 			</Modal>
 		</Container>
 	);
