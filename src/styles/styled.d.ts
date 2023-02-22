@@ -12,6 +12,8 @@ import 'styled-components';
                 iconsBgdCard:string,
                 iconsCard:string,
                 borderHeader:string,
+                projectsCard:string,
+                projectsText:string,
                 header: string,
                 headerText: string,
                 headerTextHover: string,
