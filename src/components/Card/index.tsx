@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Wrapper } from './styles';
+
 export interface IPropsCard {
     children: React.ReactNode
     wd?: string

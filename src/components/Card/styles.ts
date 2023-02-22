@@ -12,7 +12,7 @@ export const Container = styled.div<IPropsCard>`
     justify-content: ${props => props.justifyC ?? 'space-around'};
     align-items: center;
     background-image: url(${props => props.bgdImage});
-    background-color: url(${props => props.bgdColor ?? '#D9D9D9'});
+    background-color: url(${props => props.bgdColor ?? props.theme.colors.projectsCard});
     border-radius: ${props => props.borderR ?? '0'};
     background-size: cover;
     background-repeat: no-repeat;
@@ -27,6 +27,7 @@ export const Container = styled.div<IPropsCard>`
 
 //Content
 export const Wrapper = styled.div`
+    overflow-y: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
