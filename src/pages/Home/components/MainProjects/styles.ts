@@ -11,21 +11,8 @@ export const Container = styled.div`
   & div:nth-child(2){
       align-self: flex-end;
   }
-  @media (max-width:1024px) {
-    gap: 5rem;
-  }
-  @media (max-width:768px) {
-    height: 160vw;
-    gap: 5rem;
-    flex-direction: column;
-}
-@media (max-width:768px) {
-    & div:nth-child(2){
-        align-self: center;
-    }
-}
-& div{
-        display: flex;
+  & div{
+      display: flex;
         align-items: center;
         justify-content: space-between;
         height: 100%;
@@ -44,12 +31,37 @@ export const Container = styled.div`
         & ul{
             overflow-y: hidden;
             & li{
-                width: 2rem;
+                width: fit-content;
                 & i{
-                    font-size: 2rem;
+                    font-size: 2.4rem;
                 }
             }
             padding-block: 2rem;
         }
+    }
+    @media (max-width:1024px) {
+      gap: 5rem;
+    }
+    @media (max-width:768px) {
+      min-height: 180vh;
+      gap: 5rem;
+      flex-direction: column;
+    }
+    @media (max-width:425px) {
+          width: 90vw;
+      & div{
+          width: 90vw !important;
+          border-radius: 2rem;
+          & div{
+              width: 90vw;
+              margin: 0 auto;
+              border-radius: 2rem;
+          }
+      }
+    }
+    @media (max-width:768px) {
+      & div:nth-child(2){
+          align-self: center;
+      }
     }
 `;
