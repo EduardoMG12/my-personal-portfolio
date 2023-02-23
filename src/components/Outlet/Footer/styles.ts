@@ -10,17 +10,13 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 2rem;
     border-top: 0.1rem solid ${props => props.theme.colors.borderHeader};
     font-family: 'Inter', sans-serif;
-    & h2{
-        height: 100%;
-    }
     & h2, a{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
+        height: 4vh;
         font-size: 1.6rem;
         color: ${props => props.theme.colors.headerText};
     }
