@@ -4,8 +4,7 @@ export const Container = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
     overflow-y: hidden;
-    width: 100%;
-    max-width: 100vw;
+    width: 100vw;
     height: 4vh;
     background-color:${props => props.theme.colors.header};
     display: flex;
@@ -28,5 +27,25 @@ export const Container = styled.div`
     & a{
         border-bottom: 0.1rem solid ${props => props.theme.colors.headerText};
         margin-inline: 0.5rem;
+    }
+    @media (max-width:620px) {
+        & h2, & a {
+            font-size: 1.4rem;
+        }
+    }
+    @media (max-width:550px) {
+        & h2, & a {
+            font-size: 1.2rem;
+        }
+    }
+    @media (max-width:470px) {
+        & h2, & a {
+            font-size: 1rem;
+        }
+    }
+    @media (max-width:400px) {
+        & h2, & a {
+            font-size: 0.8rem;
+        }
     }
 `;

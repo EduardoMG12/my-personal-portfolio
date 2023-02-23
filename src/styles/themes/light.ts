@@ -5,6 +5,8 @@ export default {
 		primary:'#D48207',
 		secundary:'#000000',
 		ballonCard:'rgba(255, 255, 255, 0.5)',
+		projectsCard:'rgba(255, 255, 255, 0.5)',
+		projectsText:'rgba(255, 255, 255, 0.8)',
 		iconsBgdCard:'rgba(255, 255, 255, 0.8)',
 		iconsCard:'rgba(0, 0, 0, 0.5)',
 		borderHeader:'rgba(0, 0, 0, 0.5)',
