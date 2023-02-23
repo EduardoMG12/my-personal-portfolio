@@ -9,7 +9,6 @@ const MainProjects: React.FC = () => {
 			{Object.entries(mainProjects).map(([title, projects]) => {
 				return<>
 					{projects.map((project) => {
-						console.log(project);
 						return<>
 							<Card wd={'46.6rem'} hg={'35rem'} flexD={'colunm'} justifyC={'space-between'} borderR={'2rem'}>
 								<Content>
