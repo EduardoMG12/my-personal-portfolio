@@ -10,7 +10,7 @@ const Main: React.FC = () => {
 		<>
 			{/* <Header /> */}
 			<Outlet />
-			{/* <Footer /> */}
+			<Footer />
 		</>
 
 	);
