@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
 
     overflow-y: hidden;
     width: 100vw;
@@ -11,7 +11,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: flex-start;
     border-top: 0.1rem solid ${props => props.theme.colors.borderHeader};
-    font-family: 'Inter', sans-serif;
+    /* font-family: 'Inter', sans-serif; */
     & h2, a{
         display: flex;
         justify-content: center;
