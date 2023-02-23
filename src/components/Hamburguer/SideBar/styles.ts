@@ -26,7 +26,6 @@ export const SideBarMenu = styled.ul<IPropsSideBar>`
 
     }
     & li:last-child{
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
         font-family: 'Inter', sans-serif;
         font-weight: 600;
         text-align: center;
@@ -53,7 +52,6 @@ export const SideBarMenu = styled.ul<IPropsSideBar>`
 `;
 
 export const LinkContent = styled.p`
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
     font-family: 'Inter', sans-serif;
     display: block;
     font-weight: 600;
